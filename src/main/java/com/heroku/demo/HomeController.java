@@ -54,4 +54,9 @@ public class HomeController {
         }
         return home(model);
     }
+	
+	@RequestMapping(value="/index",method = RequestMethod.GET)
+    public String homepage(){
+        return "index";
+    }
 }
